@@ -41,7 +41,7 @@ open class NMessengerViewController: UIViewController, UITextViewDelegate, NMess
     //This is messenger view
     open var messengerView: NMessenger!
     //This is input view
-    open var inputBarView: InputBarView!
+    open var inputBarView: NMessengerBarView!
     
     //MARK: Private Variables
     //Bool to indicate if the keyboard is open
@@ -151,7 +151,7 @@ open class NMessengerViewController: UIViewController, UITextViewDelegate, NMess
      Override this method to create your own custom InputBarView
      - Returns: A view that extends InputBarView
      */
-    open func getInputBar() -> InputBarView
+    open func getInputBar() -> NMessengerBarView
     {
         return NMessengerBarView(controller: self)
     }
